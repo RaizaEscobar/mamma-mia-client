@@ -1,4 +1,5 @@
 import React from "react";
+import CartWidget from "../CartWidget/CartWidget";
 import {
   Box,
   Flex,
@@ -20,7 +21,7 @@ import { GiItalia } from "react-icons/gi";
 
 const links = [
   { linkName: "Products", path: "/products" },
-  { linkName: "Shopping cart", path: "/cart" },
+  { linkName: <CartWidget />, path: '/cart' },
   { linkName: "FAQ", path: "/support" },
 ];
 
@@ -52,7 +53,7 @@ const Navbar = () => {
         <HStack>
           <Link as={ReactLink} to="/" style={{ textDecoration: "none" }}>
             <Flex alignItems="center">
-              <Icon as={GiItalia} h={6} w={6} color="orange.400" />
+              <Icon as={GiItalia} h={6} w={6} color="#2F855A" />
               <Text fontWeight="extrabold">Mamma mia</Text>
             </Flex>
           </Link>
@@ -82,8 +83,8 @@ const Navbar = () => {
             display={{ base: "none", md: "inline-flex" }}
             fontSize="sm"
             fontWeight={600}
-            _hover={{ bg: "orange.400" }}
-            bg="orange.500"
+            _hover={{ bg: "#2F855A" }}
+            bg="#C53030"
             color="white"
           >
             Sign Up
