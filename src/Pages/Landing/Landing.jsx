@@ -9,7 +9,6 @@ import {
     Link,
     Skeleton,
     Stack,
-    useColorModeValue,
     Text,
   } from '@chakra-ui/react';
   import { FaArrowRight } from 'react-icons/fa';
